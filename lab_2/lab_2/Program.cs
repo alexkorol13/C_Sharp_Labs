@@ -186,7 +186,10 @@ namespace lab_2
     class V5DataCollection : V5Data, IEnumerable<DataItem>
     {
         public Dictionary<System.Numerics.Vector2, System.Numerics.Vector2> dict { get; set; }
-        public V5DataCollection(string info, DateTime date) : base(info, date) { }
+        public V5DataCollection(string info, DateTime date) : base(info, date) 
+        {
+            dict = new Dictionary<Vector2, Vector2>();
+        }
         public V5DataCollection (string filename) : base("", new DateTime())
         {
             // FILE FORMAT
@@ -203,7 +206,7 @@ namespace lab_2
 
             FileStream filestream = null;
             CultureInfo lang = new CultureInfo("ru-RU");
-
+            dict = new Dictionary<Vector2, Vector2>();
             lang.NumberFormat.NumberDecimalSeparator = ".";
             try
             {
@@ -306,7 +309,7 @@ namespace lab_2
 
     class V5MainCollection
     {
-        private List<V5Data> list;
+        private List<V5Data> list = new List<V5Data> { };
         public int Count()
         {
             return list.Count;
