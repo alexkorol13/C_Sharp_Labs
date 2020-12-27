@@ -117,7 +117,10 @@ namespace lab_1
     class V5DataCollection : V5Data
     {
         public Dictionary<System.Numerics.Vector2, System.Numerics.Vector2> dict { get; set; }
-        public V5DataCollection(string info, DateTime date) : base(info, date) {}
+        public V5DataCollection(string info, DateTime date) : base(info, date) 
+        {
+            dict = new Dictionary<Vector2, Vector2>();
+        }
         public static explicit operator V5DataCollection(V5DataOnGrid dg)
         {
             V5DataCollection collection = new V5DataCollection("from grid2d", DateTime.Now);
@@ -140,7 +143,14 @@ namespace lab_1
                 float y = NextFloat(rand) * ymax;
                 float x_val = NextFloat(rand) * (maxValue - minValue) + minValue;
                 float y_val = NextFloat(rand) * (maxValue - minValue) + minValue;
-                dict.Add(new Vector2(x, y), new Vector2(x_val, y_val));
+                try
+                {
+                    dict.Add(new Vector2(x, y), new Vector2(x_val, y_val));
+                }
+                catch (System.ArgumentException ex)
+                {
+                    k--;
+                }
             }
         }
 
@@ -174,7 +184,7 @@ namespace lab_1
 
     class V5MainCollection : IEnumerable<V5Data>
     {
-        private List<V5Data> list;
+        private List<V5Data> list = new List<V5Data> { };
         public int Count()
         {
             return list.Count;
@@ -253,7 +263,6 @@ namespace lab_1
                     Console.WriteLine(lst[i].X + "; " + lst[i].Y);
                 }
             }
-            Console.ReadKey();
         }
     }
 }

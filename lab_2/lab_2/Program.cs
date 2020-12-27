@@ -250,7 +250,13 @@ namespace lab_2
                 float y = NextFloat(rand) * ymax;
                 float x_val = NextFloat(rand) * (maxValue - minValue) + minValue;
                 float y_val = NextFloat(rand) * (maxValue - minValue) + minValue;
-                dict.Add(new Vector2(x, y), new Vector2(x_val, y_val));
+                try
+                {
+                    dict.Add(new Vector2(x, y), new Vector2(x_val, y_val));
+                } catch (System.ArgumentException ex)
+                {
+                    k--;
+                }
             }
         }
 
