@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alex\\Desktop\\lab_2\\lab_2\\lab_2.csproj": {}
+    "C:\\Users\\Alex\\Desktop\\C_Sharp_Labs\\lab_2\\lab_2\\lab_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alex\\Desktop\\lab_2\\lab_2\\lab_2.csproj": {
+    "C:\\Users\\Alex\\Desktop\\C_Sharp_Labs\\lab_2\\lab_2\\lab_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\lab_2\\lab_2\\lab_2.csproj",
+        "projectUniqueName": "C:\\Users\\Alex\\Desktop\\C_Sharp_Labs\\lab_2\\lab_2\\lab_2.csproj",
         "projectName": "lab_2",
-        "projectPath": "C:\\Users\\Alex\\Desktop\\lab_2\\lab_2\\lab_2.csproj",
+        "projectPath": "C:\\Users\\Alex\\Desktop\\C_Sharp_Labs\\lab_2\\lab_2\\lab_2.csproj",
         "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alex\\Desktop\\lab_2\\lab_2\\obj\\",
+        "outputPath": "C:\\Users\\Alex\\Desktop\\C_Sharp_Labs\\lab_2\\lab_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",

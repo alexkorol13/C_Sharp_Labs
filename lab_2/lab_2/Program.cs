@@ -280,7 +280,7 @@ namespace lab_2
 
         public override string ToString()
         {
-            return "V5DataCollection\n" + info + " " + date + dict.Count;
+            return "V5DataCollection\n" + info + " " + date + " " +  dict.Count;
         }
         public override string ToLongString()
         {
@@ -331,11 +331,11 @@ namespace lab_2
             for (int i = 0; i < 3; i++)
             {
                 Grid2D grid2d = new Grid2D(0.1f, 0.2f, 5, 10);
-                V5DataOnGrid dataOnGrid = new V5DataOnGrid("default data on grid" + i.ToString(), new DateTime(), grid2d);
+                V5DataOnGrid dataOnGrid = new V5DataOnGrid("default data on grid" + i.ToString(), DateTime.Now, grid2d);
                 dataOnGrid.InitRandom(10, 100);
                 list.Add(dataOnGrid);
 
-                V5DataCollection collection = new V5DataCollection("default data collection " + i.ToString(), new DateTime());
+                V5DataCollection collection = new V5DataCollection("default data collection " + i.ToString(), DateTime.Now);
                 collection.InitRandom(10, 20, 20, 0, 100);
                 list.Add(collection);
             }
