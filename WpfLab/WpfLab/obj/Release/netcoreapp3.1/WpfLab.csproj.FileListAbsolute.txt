@@ -1,0 +1,6 @@
+C:\Users\Alex\Desktop\WpfLab\WpfLab\obj\Release\netcoreapp3.1\WpfLab.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\WpfLab\WpfLab\obj\Release\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Alex\Desktop\WpfLab\WpfLab\obj\Release\netcoreapp3.1\App.g.cs
+C:\Users\Alex\Desktop\WpfLab\WpfLab\obj\Release\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alex\Desktop\WpfLab\WpfLab\obj\Release\netcoreapp3.1\WpfLab_MarkupCompile.cache
+C:\Users\Alex\Desktop\WpfLab\WpfLab\obj\Release\netcoreapp3.1\WpfLab_MarkupCompile.lref

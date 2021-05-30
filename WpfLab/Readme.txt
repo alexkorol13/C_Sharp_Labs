@@ -1,0 +1,1 @@
+файл приложения WpfLab.exe находится по адресу WpfLab/bin/Debug/netcoreapp3.1 (следование из этой папки)
